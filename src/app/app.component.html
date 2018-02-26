@@ -1,20 +1,106 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<app-navbar></app-navbar>
+<div class="wrapper-grid">
+  <div class="card left-profile">
+    <div class="profile-div">
+      <img class="profile-img" src="../assets/img/profile.jpg" alt="Profile" >
+      <p class="profile-txt">Michael DeConzo</p>
+    </div>
+  
+    <h4>Web Application Developer</h4>
+    <ul class="personal-info">
+      <li>Date Of Birth: January 20th, 1988</li>
+      <li>Email</li>
+      <li>Address</li>
+      <li>Phone</li>
+      <li>Website: https://ovarmorrow.github.io./</li>
+    </ul>
+  
+    <!-- To do more work -->
+    <ul class="skills">
+      <li>Computer Languages: C#, CSS, HTML, JavaScript, SQL, AngularJS</li>
+      <li>Platforms: Windows, ASP.NET/WebForms/MVC, ADO.NET, Entity Framework, Bootstrap, JQuery</li>
+      <li>Software: MS Office, Visual Studios SQL Server, SQ Lite, Git</li>
+      <!-- <li>Ability to translate business requirements from non-technical users to end product</li>
+      <li>Excellent verbal and written communication skills and strong attention to detail</li> -->
+    </ul>
+  
+    <!-- <p>Junior Developer with knowledge of C#, ASP.Net MVC 5, SQL Server along with HTML 5, CSS and Bootstrap. I've been working
+      closely with a Senior Developer to build
+      <a href="https://www.outpourfilms.com/" title="https://www.outpourfilms.com/" target="_blank" rel="noreferrer noopener">Pinetop Systems.</a> I know how to work successfully with a team to get things done with the highest quality standards.
+      I thrive in a dynamic working environment and enjoy taking on new challenges. I am a quick study and have a passion for
+      technology and learning.</p> -->
+  </div>
+  
+  <div class="card work-experience">
+    <h1>Work Experience</h1>
+  
+    <div>
+      <h3>Pinetop Systems - Junior Web Developer</h3>
+      <small>10/2014-Present</small>
+      <ul>
+        <li>ADD INFO</li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <h3>Power Curbers - Shipping and Receiving</h3>
+      <small>11/2014-Present</small>
+      <ul>
+        <li>Thorough labeling, organization and continuing maintenance of all service inventory through use of SAGE mass system,
+          accompanying physical double checking. </li>
+        <li>Extensive experience with Starship transportation program and its tools for use in packaging and shipment of service
+          parts. </li>
+        <li>In Depth knowledge of various oversea requirements and stipulations depending on cargo, contents and shipment methods.
+          (LTL freight classing, heat treated lumber, air freight regulations and commercial invoicing)
+        </li>
+        <li>Setup and packaging for overseas container shipments as well as construction of Bill of Lading. </li>
+        <li>Extensive experience loading heavy equipment onto and into varying types of trailers (RGN, Stepdeck and Container)
+          as well as proper methods in properly securing cargo for transit.</li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <h3>Power Curbers - Media Blaster</h3>
+      <small>05/2014-11/2014</small>
+      <ul>
+        <li>Thorough labeling, organization and continuing maintenance of all service inventory through use of SAGE mass system,
+          accompanying physical double checking. </li>
+        <li>Extensive experience with Starship transportation program and its tools for use in packaging and shipment of service
+          parts. </li>
+        <li>In Depth knowledge of various oversea requirements and stipulations depending on cargo, contents and shipment methods.
+          (LTL freight classing, heat treated lumber, air freight regulations and commercial invoicing)
+        </li>
+        <li>Setup and packaging for overseas container shipments as well as construction of Bill of Lading. </li>
+        <li>Extensive experience loading heavy equipment onto and into varying types of trailers (RGN, Stepdeck and Container)
+          as well as proper methods in properly securing cargo for transit.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Rodgers Unloading - Material Handler</h3>
+      <small>07/2014-10/2014</small>
+      <ul>
+        <li>Loaded materials into vehicles and installed strapping, bracing, or padding to prevent shifting or damage in transit</li>
+        <li>Conveyed materials to or from storage or work sites to designated area</li>
+        <li>Secured lifting attachments to materials and conveyed load to destination</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="card education">
+    <h1>Education</h1>
+  
+    <div>
+      <h3>Surry Community College</h3>
+      <small>08/2006-05/2008</small>
+      <p>Associate in Arts program coursework</p>
+    </div>
+    <hr />
+    <div>
+      <h3>West Stokes High School</h3>
+      <small>09/2002-05/2006</small>
+      <p>High School Diploma</p>
+    </div>
+  </div>
+</div>

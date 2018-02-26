@@ -1,0 +1,45 @@
+.left-profile {
+    grid-row: 0 / span 1;
+    grid-column: 0 / span 1;
+    width: 100%;
+    
+
+}
+
+.personal-info {
+
+}
+
+.skills {
+
+}
+
+.work-experience {
+
+}
+
+.education {
+    grid-column: 2;
+}
+
+.profile-img {
+    
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+.profile-text {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    text-align: center;
+}
+
+.profile-div {
+    position: relative; 
+    text-align: center;
+    color: black;
+    display: inline-block;
+    
+}
