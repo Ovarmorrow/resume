@@ -1,0 +1,7 @@
+body,html{height:100%}
+
+/* Create a Parallax Effect */.bgimg-1{background-attachment:fixed;background-position:50%;background-repeat:no-repeat;background-size:cover;background-image:url(/w3images/parallax1.jpg);min-height:100%}
+
+/* First image (Logo. Full height) */
+
+/* Turn off parallax scrolling for tablets and phones */@media only screen and (max-device-width:1024px){.bgimg-1{background-attachment:scroll}}.card{text-align:left;-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);padding:15px}.wrapper-grid{display:-ms-grid;display:grid;-ms-grid-columns:1fr 2fr;grid-template-columns:1fr 2fr;grid-gap:20px;margin:2%}
