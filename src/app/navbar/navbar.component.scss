@@ -9,24 +9,15 @@
 
 .bgimg-1 {
     background-image: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-24135.jpg');
-    // background-image: url('../../assets/img/background.jpg');
-    min-height: 100%;
-    // display:block;
-    // position:absolute;
-    // background-image: url('/img/background');
-    // background-repeat:no-repeat;
-    // background-size: 100% 100%;
-    // width:122px;
-    // height:148px;
-    // float:right;
-    // bottom:0;
-    // right:0;
+    min-height: 85%;
+    
 }
 
 .navbar {
     position: fixed;
     width: 100%;
     z-index: 99;
+    background: linear-gradient(to right, black, rgb(97, 54, 1));
 }
 
 .navbuttons, .navbuttons > li {
