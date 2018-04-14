@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  navBackground: string;
+  profile: string;
+  
+  constructor() { 
+    this.navBackground = "/assets/img/navBackground.jpg";
+    this.profile = "/assets/img/profile.jpg";
+   }
 }
