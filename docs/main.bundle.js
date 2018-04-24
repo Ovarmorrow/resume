@@ -61,8 +61,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'app';
-        this.navBackground = "/resume/docs/assets/img/navBackground.jpg";
-        this.profile = "/resume/docs/assets/img/profile.jpg";
+        this.navBackground = "/resume/assets/img/navBackground.jpg";
+        this.profile = "/resume/assets/img/profile.jpg";
     }
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({

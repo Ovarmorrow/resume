@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-prod": "ng build --env=prod --base-href /https://ovarmorrow.github.io/resume//",
+    "build-prod": "ng build --env=prod --base-href 'https://ovarmorrow.github.io/resume/'",
     "deploy": "ng build -sm -ec -bh /https://ovarmorrow.github.io/resume// & ngh --silent=false"
   },
   "private": true,
