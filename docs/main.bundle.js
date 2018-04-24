@@ -61,8 +61,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'app';
-        this.navBackground = "/assets/img/navBackground.jpg";
-        this.profile = "/assets/img/profile.jpg";
+        this.navBackground = "/resume/docs/assets/img/navBackground.jpg";
+        this.profile = "/resume/docs/assets/img/profile.jpg";
     }
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
@@ -139,7 +139,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* Create a Parallax Effect */\n.bgimg-1, .bgimg-2, .bgimg-3 {\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover; }\n.bgimg-1 {\n  background-image: url(\"https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-24135.jpg\");\n  min-height: 85%; }\n.navbar {\n  position: fixed;\n  width: 100%;\n  z-index: 99;\n  background: -webkit-gradient(linear, left top, right top, from(black), to(#613601));\n  background: linear-gradient(to right, black, #613601); }\n.navbuttons, .navbuttons > li {\n  display: inline;\n  padding-right: 50px;\n  font-size: 20px;\n  color: white;\n  line-height: 0.9;\n  margin: 2px 0 3px; }\n.navbuttons > li > svg:hover {\n  border-bottom: #ffffff solid 1.5px;\n  padding-bottom: 2px;\n  cursor: pointer; }\n/* Turn off parallax scrolling for tablets and phones */\n@media only screen and (max-device-width: 1024px) {\n  .bgimg-1, .bgimg-2, .bgimg-3 {\n    background-attachment: scroll; } }\n", ""]);
+exports.push([module.i, "/* Create a Parallax Effect */\n.bgimg-1, .bgimg-2, .bgimg-3 {\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover; }\n.navbar {\n  position: fixed;\n  width: 100%;\n  z-index: 99;\n  background: -webkit-gradient(linear, left top, right top, from(black), to(#613601));\n  background: linear-gradient(to right, black, #613601); }\n.navbuttons, .navbuttons > li {\n  display: inline;\n  padding-right: 50px;\n  font-size: 20px;\n  color: white;\n  line-height: 0.9;\n  margin: 2px 0 3px; }\n.navbuttons > li > svg:hover {\n  border-bottom: #ffffff solid 1.5px;\n  padding-bottom: 2px;\n  cursor: pointer; }\n/* Turn off parallax scrolling for tablets and phones */\n@media only screen and (max-device-width: 1024px) {\n  .bgimg-1, .bgimg-2, .bgimg-3 {\n    background-attachment: scroll; } }\n", ""]);
 
 // exports
 

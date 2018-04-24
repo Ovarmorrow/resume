@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +12,7 @@ export class AppComponent {
   profile: string;
   
   constructor() { 
-    this.navBackground = "/assets/img/navBackground.jpg";
-    this.profile = "/assets/img/profile.jpg";
+    this.navBackground = "/resume/docs/assets/img/navBackground.jpg";
+    this.profile = "/resume/docs/assets/img/profile.jpg";
    }
 }
