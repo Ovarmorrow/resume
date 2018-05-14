@@ -3,7 +3,15 @@
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-
+	  .left-profile {
+		  width: 35%;
+	  }
+	  .work-experience {
+		width: 65%;
+	  }
+	  .education {
+		  width: 65%;
+	  }
 }
 
 .left-profile {
