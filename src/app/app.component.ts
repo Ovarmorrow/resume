@@ -14,7 +14,7 @@ export class AppComponent {
   
   constructor() { 
     this.navBackground = "/resume/assets/img/navBackground.jpg";
-    this.profile = "/resume/assets/img/profile.jpg";
+    this.profile = "/resume/assets/img/profile.jpeg";
     this.pdfResume = "/resume/assets/img/pdfResume.pdf"
 
    }

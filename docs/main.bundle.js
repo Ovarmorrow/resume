@@ -62,7 +62,7 @@ var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'app';
         this.navBackground = "/resume/assets/img/navBackground.jpg";
-        this.profile = "/resume/assets/img/profile.jpg";
+        this.profile = "/resume/assets/img/profile.jpeg";
         this.pdfResume = "/resume/assets/img/pdfResume.pdf";
     }
     AppComponent = __decorate([
