@@ -1,43 +1,82 @@
 // $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 // @import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
-  /* Create a Parallax Effect */
+h1,
+.h1 {
+  font-size: 1.8em;
+}
+
+h3,
+h4,
+.h3,
+.h4 {
+  font-size: 1.4em;
+}
+
+/* Create a Parallax Effect */
 .bgimg-1 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('/w3images/parallax1.jpg');
-    min-height: 100%;
-}
-
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1 {
-        background-attachment: scroll;
-    }
+  background-image: url("/w3images/parallax1.jpg");
+  min-height: 100%;
 }
 
 .card {
-    text-align: left;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 15px;
-    
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
 }
 
 .wrapper-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;
-    margin: 2%;
-    
+  margin: 80px 2% 2% 2%;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-areas:
+    "profile work"
+    ". education";
+
+  grid-gap: 20px;
 }
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .wrapper-grid {
+    grid-template-areas:
+      "profile profile"
+      "work work"
+      "education education";
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for xs since this is the default in Bootstrap

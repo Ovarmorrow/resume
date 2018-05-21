@@ -1,48 +1,60 @@
- /* Create a Parallax Effect */
- .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Create a Parallax Effect */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 .navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 99;
-    background: linear-gradient(to right, black, rgb(97, 54, 1));
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: #5093ce;
+  background: -moz-linear-gradient(left, #5093ce 0%, #4273ab 54%, #0e518f 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #5093ce 0%,
+    #4273ab 54%,
+    #0e518f 100%
+  );
+  background: linear-gradient(to right, #5093ce 0%, #4273ab 54%, #0e518f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5093ce', endColorstr='#0e518f',GradientType=1 );
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
-.navbuttons, .navbuttons > li {
-    display: inline;
-    padding-right: 50px;
-    font-size: 20px;
-    color: white;
-    line-height: 0.9;
-    margin: 2px 0 3px;
-
+.navbuttons {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-
+.navbuttons > li {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 20px;
+  color: white;
+  line-height: 0.9;
+  margin: 10px 0;
+}
 .navbuttons > li > svg:hover {
-    border-bottom: #ffffff solid 1.5px;
-    padding-bottom: 2px;
-    cursor: pointer;
+  border-bottom: #ffffff solid 1.5px;
+  padding-bottom: 2px;
+  cursor: pointer;
 }
-
-.navhome {
-    
+@media (max-width: 768px) {
+  .navbuttons {
+    text-align: center;
+  }
+  .navbuttons > li {
+    width: 33.3333334%;
+    float: left;
+  }
 }
-
-.navbutton {
-
-}
-
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
-
