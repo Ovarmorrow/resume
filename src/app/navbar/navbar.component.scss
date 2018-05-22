@@ -1,17 +1,9 @@
-/* Create a Parallax Effect */
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 5vh;
   z-index: 99;
   background: #5093ce;
   background: -moz-linear-gradient(left, #5093ce 0%, #4273ab 54%, #0e518f 100%);

@@ -18,19 +18,6 @@ h4,
   font-size: 1.4em;
 }
 
-/* Create a Parallax Effect */
-.bgimg-1 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url("/w3images/parallax1.jpg");
-  min-height: 100%;
-}
 
 .card {
   text-align: left;
@@ -39,7 +26,7 @@ h4,
 }
 
 .wrapper-grid {
-  margin: 80px 2% 2% 2%;
+  margin: 25px 2% 2% 2%;
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-template-areas:
@@ -49,12 +36,7 @@ h4,
   grid-gap: 20px;
 }
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .bgimg-1 {
-    background-attachment: scroll;
-  }
-}
+
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {

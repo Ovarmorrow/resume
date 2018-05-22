@@ -12,7 +12,7 @@ export class AppComponent {
   pdfResume: string;
 
   constructor() {
-    this.navBackground = "./assets/img/navBackground.jpg";
+    this.navBackground = "./assets/img/navBackground2.jpg";
     this.profile = "./assets/img/profile.jpeg";
     this.pdfResume = "./assets/img/pdfResume.pdf";
   }
