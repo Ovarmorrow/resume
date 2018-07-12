@@ -17,7 +17,7 @@ export class ResumeComponent {
   constructor() {
     this.navBackground = "./assets/img/navBackground2.jpg";
     this.profile = "./assets/img/profile.jpeg";
-    this.pdfResume = "./assets/img/pdfResume.pdf";
+    this.pdfResume = "./assets/img/MDResumeJuly18.pdf";
   }
 
 }
