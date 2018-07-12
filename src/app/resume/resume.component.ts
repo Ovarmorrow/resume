@@ -12,12 +12,12 @@ export class ResumeComponent {
 
   navBackground: string;
   profile: string;
-  pdfResume: string;
+  MDResumeJuly18: string;
 
   constructor() {
     this.navBackground = "./assets/img/navBackground2.jpg";
     this.profile = "./assets/img/profile.jpeg";
-    this.pdfResume = "./assets/img/MDResumeJuly18.pdf";
+    this.MDResumeJuly18 = "./assets/img/MDResumeJuly18.pdf";
   }
 
 }
