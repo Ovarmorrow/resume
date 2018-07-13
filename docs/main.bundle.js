@@ -259,15 +259,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var PortfolioComponent = /** @class */ (function () {
     function PortfolioComponent() {
-        this.tao = "./img/Tao.jpg";
-        this.taoAbout = "./img/TaoAbout.jpg";
-        this.taoSchedule = "./img/TaoSchedule.jpg";
-        this.taoRoster = "./img/TaoRoster.jpg";
-        this.daletributes = "./img/Daletributes.jpg";
-        this.loanCalc1 = "./img/LoanCalc1.jpg";
-        this.loanCalc2 = "./img/LoanCalc2.jpg";
+        this.tao = "./assets/img/Tao.jpg";
+        this.taoAbout = "./assets/img/TaoAbout.jpg";
+        this.taoSchedule = "./assets/img/TaoSchedule.jpg";
+        this.taoRoster = "./assets/img/TaoRoster.jpg";
+        this.daletributes = "./assets/img/Daletributes.jpg";
+        this.loanCalc1 = "./assets/img/LoanCalc1.jpg";
+        this.loanCalc2 = "./assets/img/LoanCalc2.jpg";
         this.opacity = 0.6;
-        this.bgPalm = "./img/bgPalm.png";
+        this.bgPalm = "./assets/img/bgPalm.png";
     }
     PortfolioComponent.prototype.ngOnInit = function () {
         this.current = document.querySelector('#current');
@@ -347,9 +347,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ResumeComponent = /** @class */ (function () {
     function ResumeComponent() {
-        this.navBackground = "./img/navBackground2.jpg";
-        this.profile = "./img/profile.jpeg";
-        this.MDResumeJuly18 = "./img/MDResumeJuly18.pdf";
+        this.navBackground = "./assets/img/navBackground2.jpg";
+        this.profile = "./assets/img/profile.jpeg";
+        this.MDResumeJuly18 = "./assets/img/MDResumeJuly18.pdf";
     }
     ResumeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({

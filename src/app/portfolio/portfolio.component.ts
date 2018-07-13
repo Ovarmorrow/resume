@@ -23,16 +23,16 @@ export class PortfolioComponent implements OnInit {
   bgPalm: string;
 
   constructor() {
-    this.tao = "./img/Tao.jpg";
-    this.taoAbout = "./img/TaoAbout.jpg";
-    this.taoSchedule = "./img/TaoSchedule.jpg";
-    this.taoRoster = "./img/TaoRoster.jpg";
-    this.daletributes = "./img/Daletributes.jpg";
-    this.loanCalc1 = "./img/LoanCalc1.jpg";
-    this.loanCalc2 = "./img/LoanCalc2.jpg";
+    this.tao = "./assets/img/Tao.jpg";
+    this.taoAbout = "./assets/img/TaoAbout.jpg";
+    this.taoSchedule = "./assets/img/TaoSchedule.jpg";
+    this.taoRoster = "./assets/img/TaoRoster.jpg";
+    this.daletributes = "./assets/img/Daletributes.jpg";
+    this.loanCalc1 = "./assets/img/LoanCalc1.jpg";
+    this.loanCalc2 = "./assets/img/LoanCalc2.jpg";
 
     this.opacity = 0.6;
-    this.bgPalm = "./img/bgPalm.png";
+    this.bgPalm = "./assets/img/bgPalm.png";
 
 
 
