@@ -1,5 +1,5 @@
-// $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-// @import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 html,
 body {
@@ -19,46 +19,17 @@ h4,
 }
 
 
-.card {
-  text-align: left;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 15px;
-}
-
-.wrapper-grid {
-  margin: 25px 2% 2% 2%;
-  display: grid;
-  grid-template-columns: 30% 1fr;
-  grid-template-areas:
-    "profile work"
-    ". education";
-
-  grid-gap: 20px;
-}
-
-
-
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-}
+//@media (min-width: 1200px) {
+//}
 
 // Large devices (desktops, 992px and up)
-@media (max-width: 992px) {
-}
-
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
-  .wrapper-grid {
-    grid-template-areas:
-      "profile profile"
-      "work work"
-      "education education";
-  }
-}
+//@media (max-width: 992px) {
+//}
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) {
-}
+//@media (max-width: 576px) {
+//}
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query for xs since this is the default in Bootstrap

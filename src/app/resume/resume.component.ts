@@ -12,12 +12,16 @@ export class ResumeComponent {
 
   navBackground: string;
   profile: string;
-  MDResumeJuly18: string;
+  MDResumeAugust18: string;
+  underTheWeather: string;
+  drumkit: string;
 
   constructor() {
     this.navBackground = "./assets/img/navBackground2.jpg";
     this.profile = "./assets/img/profile.jpeg";
-    this.MDResumeJuly18 = "./assets/img/MDResumeJuly18.pdf";
+    this.MDResumeAugust18 = "./assets/img/MDResumeAugust18.pdf";
+    this.underTheWeather = "./assets/img/UnderTheWeather.jpg";
+    this.drumkit = "./assets/img/drumKit.jpg";
   }
 
 }

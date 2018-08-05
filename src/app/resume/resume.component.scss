@@ -1,10 +1,32 @@
+.wrapper-grid {
+  margin: 25px 2% 2% 2%;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-areas: "profile work" "experience projects" "education projects";
+  grid-gap: 20px;
+}
+
+.card {
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+}
+
+.experience {
+  grid-area: experience;
+}
+
 .left-profile {
+  display: flex;
+  flex-flow: column;
   grid-area: profile;
   width: 100%;
 }
 
 .work-experience {
   grid-area: work;
+  padding: 2%;
+  font-size: 19px;
 }
 
 .education {
@@ -46,7 +68,100 @@
 
 .timeline {
   color: #0b538f;
-  font-size: 1rem;
+  font-size: 1.7rem;
+}
+
+.projects {
+  grid-row: span 2;
+}
+
+section {
+  display: block;
+  float: left;
+  min-height: 300px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.filter {
+  display: block;
+  float: left;
+  margin-bottom: 25px;
+  width: 25%;
+  border: #fff 3px solid;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 0;
+  color: white;
+  background: #1271C7;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background: black;
+  }
+}
+
+section>div {
+  display: block;
+  float: left;
+  margin: 10px;
+  -webkit-transition: all .8s linear;
+  -moz-transition: all .8s linear;
+  -o-transition: all .8s linear;
+  -ms-transition: all .8s linear;
+  transition: all .8s linear;
+  margin-top: 20px;
+}
+
+.thumbnails img {
+  height: 23vh;
+  width: 29vh;
+  -webkit-transition: all .8s linear;
+  -moz-transition: all .8s linear;
+  -o-transition: all .8s linear;
+  -ms-transition: all .8s linear;
+  transition: all .8s linear;
+}
+
+// div[data-filter="htmlcss"]{
+//   background:red;
+// }
+// div[data-filter="javascript"]{
+//   background:green;
+// }
+// div[data-filter="c#"]{
+//   background:blue;
+// }
+a:focus[data-filter] {
+  opacity: .8;
+  outline: none;
+}
+
+a[data-filter="htmlcss"]:focus ~ div:not([data-filter="htmlcss"]),
+a[data-filter="htmlcss"]:focus ~ div:not([data-filter="htmlcss"]) img{
+  height: 0px;
+  width: 0px;
+  border: none;
+  margin: 0;
+  opacity: 0;
+}
+
+a[data-filter="javascript"]:focus ~ div:not([data-filter="javascript"]),
+a[data-filter="javascript"]:focus ~ div:not([data-filter="javascript"]) img{
+  height: 0px;
+  width: 0px;
+  border: none;
+  margin: 0;
+  opacity: 0;
+}
+
+a[data-filter="c#"]:focus ~ div:not([data-filter="c#"]),
+a[data-filter="c#"]:focus ~ div:not([data-filter="c#"]) img{
+  height: 0px;
+  width: 0px;
+  border: none;
+  margin: 0;
+  opacity: 0;
 }
 
 .buttonDownload {
@@ -128,5 +243,26 @@
   100% {
     margin-top: 0;
     opacity: 0;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .wrapper-grid {
+    grid-template-areas: "profile profile" "work work" "experience experience" "education education" "projects projects";
+
+  }
+
+  .projects {
+    grid-column: span 2;
+  }
+
+  .thumbnails img {
+    width: 100%;
+  }
+
+  .buttonDownload {
+    margin: 0 auto;
+    width: 80%;
   }
 }

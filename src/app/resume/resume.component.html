@@ -1,41 +1,61 @@
 <div>
-    <img class="bgimg1" [src]="navBackground">
+  <img class="bgimg1" [src]="navBackground">
 </div>
 
 <div class="wrapper-grid">
-  <div class="card left-profile">`
+  <div class="card left-profile">
     <div class="profile-div">
       <img class="profile-img" [src]="profile" alt="Profile">
       <div class="profile-text">Michael DeConzo</div>
     </div>
-    <!-- Left Section of column page -->
+    <!-- Left column section of  page -->
     <h4>Web Application Developer</h4>
     <ul class="personal-info">
       <li>Date Of Birth: January 20th, 1988</li>
       <li>Email: Medeconzo@gmail.com</li>
-      <li>Website:
-        <a href="https://ovarmorrow.github.io/">Landing Page</a>
+      <li>Websites:
+        <a href="https://ovarmorrow.github.io/"><strong>Landing Page</strong></a> &nbsp;|&nbsp;&nbsp;<a routerLink='portfolio'><strong>Portfolio</strong></a>
       </li>
     </ul>
 
 
     <ul class="skills">
-      <li>Languages: C#, CSS, HTML, JavaScript, SQL, AngularJS, Bootstrap, JQuery</li>
+      <li>Languages: C#, CSS, HTML, JavaScript, SQL, Angular2+, Bootstrap</li>
       <li>Platforms: Windows, ASP.NET/WebForms/MVC, Entity Framework </li>
-      <li>Software: MS Office, Visual Studios SQL Server, SQ Lite, Git</li>
+      <li>Software: MS Office, Visual Studios / VSCode, SQL Server, Git</li>
     </ul>
-
-    <h4>Experience</h4>
-
-    <p> Developer with knowledge of C#, ASP.Net MVC 5, SQL Server along with HTML 5, CSS and Bootstrap. I've been working closely
-      with Senior Developers to cement my knowledge of these languages and expand my portfolio. I know how to work successfully
-      with a team to get things done with the highest quality standards. I thrive in a dynamic working environment and enjoy
-      taking on new challenges. I am a quick study and have a passion for technology and learning.</p>
 
     <h4>PDF Resume</h4>
 
-    <a [href]="MDResumeJuly18" class="buttonDownload" download>Download</a>
+    <a [href]="MDResumeAugust18" class="buttonDownload" download>Download</a>
 
+  </div>
+
+  <div class="card experience">
+    <h4>Experience</h4>
+
+    <p> Web Developer with knowledge of C#, ASP.Net MVC 5, SQL Server along with HTML 5, CSS and Bootstrap. Working closely with
+      Senior Developers to cement knowledge of affore mentioned languages and expand my portfolio. Adept at working successfully
+      with a team to find solutions with the highest quality standards. I thrive in a dynamic working environment and enjoy
+      taking on new challenges. I am a quick study and have a passion for technology and erudition.</p>
+  </div>
+
+  <div class="card education">
+    <h1>Education</h1>
+
+    <div>
+      <h3>Surry Community College</h3>
+      <span class="timeline">
+        <i class="fas fa-calendar-alt"></i> 08/2006-05/2008</span>
+      <p>Associate in Arts program coursework</p>
+    </div>
+    <hr />
+    <div>
+      <h3>West Stokes High School</h3>
+      <span class="timeline">
+        <i class="fas fa-calendar-alt"></i> 09/2002-05/2006</span>
+      <p>High School Diploma</p>
+    </div>
   </div>
   <!-- Right column section of page -->
   <div class="card work-experience">
@@ -94,28 +114,33 @@
       <span class="timeline">
         <i class="fas fa-calendar-alt"></i> 07/2014-10/2014</span>
       <ul>
-        <li>Loaded materials into vehicles and installed strapping, bracing, or padding to prevent shifting or damage in transit</li>
+        <li>Loaded materials into vehicles and install strapping, bracing, or padding to prevent shifting or damage in transit</li>
         <li>Conveyed materials to or from storage or work sites to designated area</li>
         <li>Secured lifting attachments to materials and conveyed load to destination</li>
       </ul>
     </div>
   </div>
-  <!-- Right buttom column section -->
-  <div class="card education">
-    <h1>Education</h1>
+  <!-- Right bottom column section -->
+  <section class="card projects">
+    <h4>Projects</h4>
 
-    <div>
-      <h3>Surry Community College</h3>
-      <span class="timeline">
-        <i class="fas fa-calendar-alt"></i> 08/2006-05/2008</span>
-      <p>Associate in Arts program coursework</p>
+    <a class="filter" data-filter="all" tabindex="-1">ALL</a>
+    <a class="filter" data-filter="htmlcss" tabindex="-1">HTML/CSS</a>
+    <a class="filter" data-filter="javascript" tabindex="-1">JAVASCRIPT</a>
+    <a class="filter" data-filter="c#" tabindex="-1">C#</a>
+
+    <div class="thumbnails" data-filter="htmlcss">
+      <img src="./assets/img/TaoAbout.jpg">
     </div>
-    <hr />
-    <div>
-      <h3>West Stokes High School</h3>
-      <span class="timeline">
-        <i class="fas fa-calendar-alt"></i> 09/2002-05/2006</span>
-      <p>High School Diploma</p>
+    <div class="thumbnails" data-filter="c#">
+      <img src="./assets/img/LoanCalc1.jpg">
     </div>
-  </div>
+    <div class="thumbnails" data-filter="javascript">
+      <img src="./assets/img/drumKit.jpg">
+    </div>
+    <div class="thumbnails" data-filter="javascript">
+      <img src="./assets/img/UnderTheWeather.jpg">
+    </div>
+
+  </section>
 </div>
