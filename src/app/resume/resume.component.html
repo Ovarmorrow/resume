@@ -14,7 +14,12 @@
       <li>Date Of Birth: January 20th, 1988</li>
       <li>Email: Medeconzo@gmail.com</li>
       <li>Websites:
-        <a href="https://ovarmorrow.github.io/"><strong>Landing Page</strong></a> &nbsp;|&nbsp;&nbsp;<a routerLink='portfolio'><strong>Portfolio</strong></a>
+        <a href="https://ovarmorrow.github.io/">
+          <strong>Landing Page</strong>
+        </a> &nbsp;|&nbsp;&nbsp;
+        <a routerLink='portfolio'>
+          <strong>Portfolio</strong>
+        </a>
       </li>
     </ul>
 
@@ -129,17 +134,36 @@
     <a class="filter" data-filter="javascript" tabindex="-1">JAVASCRIPT</a>
     <a class="filter" data-filter="c#" tabindex="-1">C#</a>
 
-    <div class="thumbnails" data-filter="htmlcss">
+    <div (mouseenter)="mouseEnter($event)" (mouseleave)="mouseLeave($event)" class="thumbnails" data-filter="htmlcss">
       <img src="./assets/img/Taothumb.jpg">
+      <div class="overlay">
+        <div class="text">Third and Out</div>
+        <span class="highlight">HTML / CSS</span>
+      </div>
     </div>
-    <div class="thumbnails" data-filter="c#">
+
+    <div (mouseenter)="mouseEnter($event)" (mouseleave)="mouseLeave($event)" class="thumbnails" data-filter="c#">
       <img src="./assets/img/Loanthumb.jpg">
+      <div class="overlay">
+        <div class="text">Loan Calculator</div>
+        <span class="highlight">C#</span>
+      </div>
     </div>
-    <div class="thumbnails" data-filter="javascript">
+
+    <div (mouseenter)="mouseEnter($event)" (mouseleave)="mouseLeave($event)" class="thumbnails" data-filter="javascript">
       <img src="./assets/img/drumthumb.jpg">
+      <div class="overlay">
+        <div class="text">Drumkit</div>
+        <span class="highlight">Javascript</span>
+      </div>
     </div>
-    <div class="thumbnails" data-filter="javascript">
+
+    <div (mouseenter)="mouseEnter($event)" (mouseleave)="mouseLeave($event)" class="thumbnails" data-filter="javascript">
       <img src="./assets/img/Underthumb.jpg">
+      <div class="overlay">
+        <div class="text">Under the Weather</div>
+        <span class="highlight">Javascript</span>
+      </div>
     </div>
 
   </section>

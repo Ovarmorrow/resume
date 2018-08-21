@@ -2,6 +2,9 @@ import {
   Component,
   OnInit
 } from '@angular/core';
+import {
+  text
+} from '../../../node_modules/@angular/core/src/render3/instructions';
 
 @Component({
   selector: 'app-resume',
@@ -15,6 +18,7 @@ export class ResumeComponent {
   MDResumeAugust18: string;
   underTheWeather: string;
   drumkit: string;
+  highlight: any;
 
   constructor() {
     this.navBackground = "./assets/img/navBackground2.jpg";
@@ -24,4 +28,18 @@ export class ResumeComponent {
     this.drumkit = "./assets/img/drumKit.jpg";
   }
 
+  mouseEnter($event) {
+    $event.target.classList.add("active");
+    // $event.target.classList.add("animated", "bounceInDown");
+    $event.target.style.background = "whitesmoke";
+  }
+
+  mouseLeave($event) {
+    // $event.target.classList.remove("active");
+    setTimeout(() => $event.target.classList.remove("active"), 500);
+    // $event.target.classList.remove("animated", "bounceInDown");
+    // $event.target.style.background = "none";
+    console.log("mouseleave");
+
+  }
 }
