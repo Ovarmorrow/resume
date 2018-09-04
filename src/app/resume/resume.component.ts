@@ -21,7 +21,7 @@ export class ResumeComponent {
   highlight: any;
 
   constructor() {
-    this.navBackground = "./assets/img/navBackground2.jpg";
+    this.navBackground = "./assets/img/navBackground4.png";
     this.profile = "./assets/img/profile.jpeg";
     this.MDResumeAugust18 = "./assets/img/MDResumeAugust18.pdf";
     this.underTheWeather = "./assets/img/UnderTheWeather.jpg";

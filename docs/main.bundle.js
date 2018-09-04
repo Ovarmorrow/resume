@@ -231,7 +231,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".page-layout {\n  display: -ms-grid;\n  display: grid;\n  -ms-grid-columns: (1fr)[6];\n      grid-template-columns: repeat(6, 1fr);\n      grid-template-areas: \"side-left container container container container side-right\"\r \"side-left imgs imgs imgs imgs side-right\";\n  grid-gap: 20px;\n  width: 100%;\n  grid-auto-flow: dense; }\n\n.container {\n  width: 100%;\n  border: #386ba5 solid 3px;\n  background: rgba(0, 0, 0, 0.63);\n  padding-bottom: 12px;\n  -ms-grid-row: 1;\n  -ms-grid-column: 2;\n  -ms-grid-column-span: 4;\n  grid-area: container; }\n\n.side-left {\n  -ms-grid-row: 1;\n  -ms-grid-row-span: 2;\n  -ms-grid-column: 1;\n  grid-area: side-left;\n  grid-column-start: 1;\n  grid-column-end: 3;\n  margin-bottom: 5px;\n  margin-left: 5px;\n  margin-top: 5px; }\n\n.side-right {\n  -ms-grid-row: 1;\n  -ms-grid-row-span: 2;\n  -ms-grid-column: 6;\n  grid-area: side-right;\n  -ms-grid-column: 5;\n      grid-column-start: 5;\n  grid-column-end: 7;\n  -webkit-transform: scaleX(-1);\n  transform: scaleX(-1);\n  z-index: -1;\n  margin-bottom: 5px;\n  margin-right: 5px;\n  margin-top: 5px; }\n\n.astrobg {\n  background-image: url(\"https://i.imgur.com/4lwIqTP.jpg\"); }\n\n.main-img img,\n.imgs img {\n  width: 100%;\n  padding-top: 12px; }\n\n.imgs {\n  display: -ms-grid;\n  display: grid;\n  -ms-grid-columns: (1fr)[4];\n      grid-template-columns: repeat(4, 1fr);\n  grid-gap: 5px;\n  background: #000;\n  -ms-grid-row: 2;\n  -ms-grid-column: 2;\n  -ms-grid-column-span: 4;\n  grid-area: imgs; }\n\n@-webkit-keyframes fadeIn {\n  to {\n    opacity: 1; } }\n\n@keyframes fadeIn {\n  to {\n    opacity: 1; } }\n\n.fade-in {\n  opacity: 0;\n  -webkit-animation: fadeIn 0.5s ease-in 1 forwards;\n          animation: fadeIn 0.5s ease-in 1 forwards; }\n\n@-webkit-keyframes filling {\n  from {\n    background-position: center 25%; }\n  to {\n    background-position: center 50%; } }\n\n@keyframes filling {\n  from {\n    background-position: center 25%; }\n  to {\n    background-position: center 50%; } }\n\n.container-text {\n  background-image: url(\"http://www.prosportsbackgrounds.com/assets/car-city2.png\");\n  -webkit-text-fill-color: transparent;\n  -webkit-background-clip: text;\n  color: #FFFFFF;\n  font-size: 90px;\n  font-family: 'Bungee', cursive;\n  -webkit-animation: filling 3s ease forwards;\n          animation: filling 3s ease forwards;\n  text-align: center; }\n", ""]);
+exports.push([module.i, ".page-layout {\n  display: -ms-grid;\n  display: grid;\n  -ms-grid-columns: (1fr)[6];\n      grid-template-columns: repeat(6, 1fr);\n      grid-template-areas: \"side-left container container container container side-right\"\r \"side-left imgs imgs imgs imgs side-right\";\n  grid-gap: 20px;\n  width: 100%;\n  grid-auto-flow: dense; }\n\n.container {\n  width: 100%;\n  border: #386ba5 solid 3px;\n  background: rgba(0, 0, 0, 0.63);\n  padding-bottom: 12px;\n  -ms-grid-row: 1;\n  -ms-grid-column: 2;\n  -ms-grid-column-span: 4;\n  grid-area: container; }\n\n.side-left {\n  -ms-grid-row: 1;\n  -ms-grid-row-span: 2;\n  -ms-grid-column: 1;\n  grid-area: side-left;\n  grid-column-start: 1;\n  grid-column-end: 5;\n  grid-row-start: 1;\n  grid-row-end: 4;\n  margin-bottom: 5px;\n  margin-left: 5px;\n  margin-top: 5px; }\n\n.side-right {\n  -ms-grid-row: 1;\n  -ms-grid-row-span: 2;\n  -ms-grid-column: 6;\n  grid-area: side-right;\n  -ms-grid-column: 4;\n      grid-column-start: 4;\n  grid-column-end: 7;\n  grid-row-start: 1;\n  grid-row-end: 4;\n  -webkit-transform: scaleX(-1);\n  transform: scaleX(-1);\n  z-index: -1;\n  margin-bottom: 5px;\n  margin-right: 5px;\n  margin-top: 5px; }\n\n.astrobg {\n  /* FF3.6-15 */\n  /* Chrome10-25,Safari5.1-6 */\n  background: -webkit-gradient(linear, left top, left bottom, from(rgba(172, 213, 240, 0)), to(#4e95dc));\n  background: linear-gradient(to bottom, rgba(172, 213, 240, 0) 0%, #4e95dc 100%);\n  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00acd5f0', endColorstr='#4e95dc',GradientType=0 );\n  /* IE6-9 */ }\n\n.main-img img,\n.imgs img {\n  width: 100%;\n  padding-top: 12px; }\n\n.imgs {\n  display: -ms-grid;\n  display: grid;\n  -ms-grid-columns: (1fr)[4];\n      grid-template-columns: repeat(4, 1fr);\n  grid-gap: 5px;\n  background: #000;\n  -ms-grid-row: 2;\n  -ms-grid-column: 2;\n  -ms-grid-column-span: 4;\n  grid-area: imgs; }\n\n@-webkit-keyframes fadeIn {\n  to {\n    opacity: 0.5;\n    -webkit-animation: fadeIn 0.5s ease-in 1 forwards;\n            animation: fadeIn 0.5s ease-in 1 forwards; } }\n\n@keyframes fadeIn {\n  to {\n    opacity: 0.5;\n    -webkit-animation: fadeIn 0.5s ease-in 1 forwards;\n            animation: fadeIn 0.5s ease-in 1 forwards; } }\n\n.fade-in {\n  opacity: 0;\n  -webkit-animation: fadeIn 0.5s ease-in 1 forwards;\n          animation: fadeIn 0.5s ease-in 1 forwards; }\n\n@-webkit-keyframes filling {\n  from {\n    background-position: center 25%; }\n  to {\n    background-position: center 50%; } }\n\n@keyframes filling {\n  from {\n    background-position: center 25%; }\n  to {\n    background-position: center 50%; } }\n\n.container-text {\n  background-image: url(\"https://images.pexels.com/photos/1292998/pexels-photo-1292998.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\");\n  -webkit-text-fill-color: transparent;\n  -webkit-background-clip: text;\n  color: #FFFFFF;\n  font-size: 90px;\n  font-family: 'Bungee', cursive;\n  -webkit-animation: filling 3s ease forwards;\n          animation: filling 3s ease forwards;\n  text-align: center; }\n", ""]);
 
 // exports
 
@@ -266,7 +266,7 @@ var PortfolioComponent = /** @class */ (function () {
             },
             {
                 "projectName": "p2",
-                "projectDesc": "The About section of the Panthers page. It was exciting learning to tinker with img sizing and doing a source quote",
+                "projectDesc": "The About section of the Panthers page. It was exciting learning to tinker with img sizing and doing a source quote. HTML and CSS",
                 "projectImg": "./assets/img/TaoAbout.jpg"
             },
             {
@@ -281,7 +281,7 @@ var PortfolioComponent = /** @class */ (function () {
             },
             {
                 "projectName": "p5",
-                "projectDesc": "The final tables after loans are entered. Expanded my knowledge on the use of tables and changing their output display",
+                "projectDesc": "The final tables after loans are entered. Expanded my knowledge on the use of tables and changing their output display. C#",
                 "projectImg": "./assets/img/LoanCalc2.jpg"
             },
             {
@@ -304,7 +304,6 @@ var PortfolioComponent = /** @class */ (function () {
         this.loanCalc2 = "./assets/img/LoanCalc2.jpg";
         this.underTheWeather = "./assets/img/UnderTheWeather.jpg";
         this.opacity = 0.6;
-        this.bgPalm = "./assets/img/bgPalm.png";
     }
     PortfolioComponent.prototype.ngOnInit = function () {
         this.current = document.querySelector('#current');
@@ -314,16 +313,21 @@ var PortfolioComponent = /** @class */ (function () {
     };
     PortfolioComponent.prototype.imgClick = function (e, index) {
         var _this = this;
+        //Reset all image opacity on click
+        var imgArray = Array.from(document.querySelectorAll('.imgs img'));
+        imgArray.forEach(function (img) {
+            _this.img = img;
+            _this.img.style.opacity = 1;
+            // console.log("img", img);
+        });
         // target all project-description elements and hide them
         this.pD = document.getElementsByClassName("project-description");
-        console.log('this.pD', this.pD);
+        // console.log('this.pD', this.pD);
         for (var i = 0; i < this.pD.length; i++) {
             this.pD[i].style.display = "none";
-            console.log('pD', this.pD[i]);
+            // console.log('pD', this.pD[i]);
         }
-        for (var i = 0; i < this.imgs.length; i++) {
-            this.imgs[i].style.opacity = 1;
-        }
+        // console.log(this.imgs[1]);
         // Change current img to clicked img
         this.current.src = e.target.src;
         // Add fade in class
@@ -334,11 +338,6 @@ var PortfolioComponent = /** @class */ (function () {
         e.target.style.opacity = this.opacity;
         var currentProject = "project" + index;
         console.log('currentProject', currentProject);
-        // let derp = "lerp";
-        // let str = `*${currentProject}`;
-        // console.log('str', str);
-        // let dog = "dog";
-        // let what = "#" + currentProject;
         var cP = document.getElementById(currentProject);
         cP.style.display = "flex";
     };
@@ -400,7 +399,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ResumeComponent = /** @class */ (function () {
     function ResumeComponent() {
-        this.navBackground = "./assets/img/navBackground2.jpg";
+        this.navBackground = "./assets/img/navBackground4.png";
         this.profile = "./assets/img/profile.jpeg";
         this.MDResumeAugust18 = "./assets/img/MDResumeAugust18.pdf";
         this.underTheWeather = "./assets/img/UnderTheWeather.jpg";

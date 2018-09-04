@@ -1,6 +1,7 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  style
 } from '@angular/core';
 
 @Component({
@@ -19,8 +20,8 @@ export class PortfolioComponent implements OnInit {
   loanCalc2: string;
   current: any;
   imgs: any;
+  img: any;
   opacity: any;
-  bgPalm: string;
   underTheWeather: string;
   pD: any;
   projects = [{
@@ -30,7 +31,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       "projectName": "p2",
-      "projectDesc": "The About section of the Panthers page. It was exciting learning to tinker with img sizing and doing a source quote",
+      "projectDesc": "The About section of the Panthers page. It was exciting learning to tinker with img sizing and doing a source quote. HTML and CSS",
       "projectImg": "./assets/img/TaoAbout.jpg"
     },
     {
@@ -45,7 +46,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       "projectName": "p5",
-      "projectDesc": "The final tables after loans are entered. Expanded my knowledge on the use of tables and changing their output display",
+      "projectDesc": "The final tables after loans are entered. Expanded my knowledge on the use of tables and changing their output display. C#",
       "projectImg": "./assets/img/LoanCalc2.jpg"
     },
     {
@@ -71,7 +72,6 @@ export class PortfolioComponent implements OnInit {
     this.underTheWeather = "./assets/img/UnderTheWeather.jpg";
 
     this.opacity = 0.6;
-    this.bgPalm = "./assets/img/bgPalm.png";
   }
 
   ngOnInit() {
@@ -81,42 +81,37 @@ export class PortfolioComponent implements OnInit {
     // Set first img opacity
     // this.imgs[0].style.opacity = this.opacity;
   }
-
+  
 
   imgClick(e, index) {
-
+    //Reset all image opacity on click
+    const imgArray = Array.from(document.querySelectorAll('.imgs img'));
+    imgArray.forEach(img => { 
+      this.img = img;
+      this.img.style.opacity = 1;
+      // console.log("img", img);
+    });
     // target all project-description elements and hide them
     this.pD = document.getElementsByClassName("project-description");
-    console.log('this.pD', this.pD);
+    // console.log('this.pD', this.pD);
     for (let i = 0; i < this.pD.length; i++) {
       this.pD[i].style.display = "none";
-      console.log('pD', this.pD[i]);
+      // console.log('pD', this.pD[i]);
     }
+    
+    // console.log(this.imgs[1]);
 
-    for (let i = 0; i < this.imgs.length; i++) {
-      this.imgs[i].style.opacity = 1;
-    }
     // Change current img to clicked img
     this.current.src = e.target.src;
     // Add fade in class
     this.current.classList.add('fade-in');
-
     // Remove fade-in class after .5s
     setTimeout(() => this.current.classList.remove('fade-in'), 500);
     // Change opacity to opacity var
     e.target.style.opacity = this.opacity;
     let currentProject = "project" + index;
     console.log('currentProject', currentProject);
-    // let derp = "lerp";
-    // let str = `*${currentProject}`;
-    // console.log('str', str);
-    // let dog = "dog";
-    // let what = "#" + currentProject;
-
     let cP = document.getElementById(currentProject);
     cP.style.display = "flex";
-  
   }
-
-
 }
